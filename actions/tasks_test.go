@@ -28,6 +28,17 @@ func (as *ActionSuite) Test_TasksIndex_ListsTasks() {
 	as.Contains(body, "Completada")
 }
 
+func (as *ActionSuite) Test_TasksIndex_NoPageHeader() {
+	as.LoadFixture("tres tareas")
+
+	res := as.HTML("/").Get()
+	as.Equal(200, res.Code)
+
+	body := res.Body.String()
+	as.NotContains(body, "page-header")
+	as.NotContains(body, "en tu lista")
+}
+
 func (as *ActionSuite) Test_TasksCreate_Valid() {
 	res := as.HTML("/tasks").Post(&models.Task{Title: "  Nueva tarea de prueba  "})
 	as.Equal(303, res.Code)

@@ -98,21 +98,11 @@ body {
   min-width: 0;
 }
 
-.page-header {
-  margin-bottom: 1.5rem;
-}
-
 h1 {
   font-size: 1.7rem;
   font-weight: 750;
   line-height: 1.2;
   letter-spacing: -0.025em;
-}
-
-.list-count {
-  margin-top: 0.4rem;
-  color: var(--color-muted);
-  font-size: 0.8rem;
 }
 
 .task-list {

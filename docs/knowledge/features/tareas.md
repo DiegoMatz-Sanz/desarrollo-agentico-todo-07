@@ -5,7 +5,7 @@ Lo que ve y puede hacer el usuario con sus tareas. Todo pasa en dos pantallas: l
 ## La lista
 
 - La pestaña y el enlace de la navegación lateral dicen «Tareas». El título de la página también.
-- Debajo del título, el número de tareas: «3 tareas en tu lista», y en singular «1 tarea en tu lista».
+- La lista empieza directamente con las tareas: no hay cabecera visible ni contador encima. El encabezado «Tareas» solo lo leen los lectores de pantalla.
 - Las tareas salen por orden de creación, de la más antigua a la más reciente.
 - Cada tarea muestra:
   - un botón redondo para completarla o reabrirla;
